@@ -31,6 +31,7 @@ namespace api.BO
                     id = product.Id, 
                     price = Math.Round(product.Price * tempCurr.Rates[currency], 2), 
                     currency = currency,
+                    image = product.Image,
                     title = product.Title
                 });
             }
@@ -47,6 +48,7 @@ namespace api.BO
                     id = product.Id,
                     price = product.Price,
                     currency = "AUS",
+                    image = product.Image,
                     title = product.Title
                 });
             }
